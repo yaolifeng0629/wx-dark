@@ -1,0 +1,25 @@
+{
+    "name": "dark-wechat",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "electron": "^13.0.0",
+      "@emotion/react": "^11.10.5",
+      "@emotion/styled": "^11.10.5",
+      "@mui/material": "^5.10.11"
+    },
+    "scripts": {
+      "start": "npx react-scripts start",
+      "build": "npx react-scripts build",
+      "electron": "electron .",
+      "dev": "npx concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\""
+    },
+    "main": "public/electron.js",
+    "devDependencies": {
+      "concurrently": "^6.2.0",
+      "wait-on": "^5.3.0",
+      "react-scripts": "4.0.3"
+    }
+  }
